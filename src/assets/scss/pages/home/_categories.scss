@@ -1,0 +1,40 @@
+.categoris {
+    margin-top: 80px;
+    &-cards {
+        @include flex(center, unset);
+        column-gap: 30px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        &-card {
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            border-radius: 4px;
+            padding: 25px 55px;
+            @include flex(center, center);
+            flex-direction: column;
+            @include trn();
+
+           &:hover{
+            background-color: $red-color;
+           }
+           &:hover &-title{
+            color: $white-color;
+           }
+           &:hover &-img g{
+            stroke: $white-color;
+           }
+            &-img {
+                height: 56px;
+            }
+
+            &-title {
+                font-family: $main-font;
+                font-weight: 400;
+                font-size: 16px;
+
+                // line-height: 24px;
+                line-height: 1.5;
+                color: #000;
+            }
+        }
+    }
+}

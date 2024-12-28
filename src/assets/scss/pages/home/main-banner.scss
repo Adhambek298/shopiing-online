@@ -1,0 +1,74 @@
+.main-banner {
+    margin-top: 170px;
+    &-row {
+        display: flex;
+        background-color: $black-color;
+        border-radius: 6px;
+        padding-top: 69px;
+        padding-left: 59px;
+    }
+    &-left {
+        width: 50%;
+        height: 100%;
+    }
+    &-text {
+        font-family: $main-font;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.25;
+        color: #0f6;
+        margin-bottom: 32px;
+    }
+    &-title {
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 1.25;
+        letter-spacing: 0.04em;
+        color: $text-color;
+        margin-bottom: 32px;
+    }
+    &-data {
+        display: flex;
+        column-gap: 24px;
+        margin-bottom: 40px;
+    }
+    &-button {
+        border-radius: 4px;
+        padding: 16px 48px;
+        background: #0f6;
+        font-family: $main-font;
+        font-weight: 500;
+        line-height: 1.5;
+        color: $text-color;
+        @include trn();
+        &:hover{
+            background-color: $black-color;
+            color: #0f6;
+            border: 1px solid #0f6;
+        }
+    }
+    &-time {
+        background-color: $white-color;
+        border-radius: 50%;
+        width: 62px;
+        height: 62px;
+        @include flex(center, center);
+        flex-direction: column;
+
+        &-num {
+            font-family: $main-font;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 1.25;
+            color: $black-color;
+        }
+        &-text {
+            font-family: $main-font;
+            font-weight: 400;
+            font-size: 11px;
+            line-height: 1.63636;
+            color: $black-color;
+        }
+    }
+}

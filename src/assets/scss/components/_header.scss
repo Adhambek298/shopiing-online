@@ -1,0 +1,132 @@
+.header {
+  &-top {
+    background-color: $black-color;
+    padding: 4px 0;
+
+    .header-icon-low {
+      @include flex(center, center);
+    }
+    .header-text-black {
+      display: flex;
+    }
+  }
+
+  .header-text-black-icon {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: $text-color;
+
+    @include md(775) {
+        font-size: 8px;
+    }
+  }
+
+  .header-button-shoping {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 171%;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    text-align: center;
+    color: $text-color;
+    margin-left: 8px;
+    @include trn();
+
+    &:hover {
+      color: aqua;
+    }
+    @include md(775) {
+        font-size: 8px;
+    }
+  }
+
+  .header-languse {
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 150%;
+    color: $text-color;
+    @include flex(center, center);
+    margin-left: 50px;
+    @include md(775) {
+        font-size: 8px;
+        margin-left: 20px;
+    }
+  }
+
+ .header-wor {
+    @include flex(center, space-between);
+    padding: 20px 0;
+  }
+
+  .header-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: $black-color;
+    @include trn();
+
+    &:not(:last-child) {
+        margin-right: 48px;
+    }
+    &.active, &:hover {
+      color: aquamarine;
+    }
+
+    @include md(900) {
+        &:not(:last-child) {
+            margin-right: 28px;
+        }
+        font-size: 14px
+    }
+
+    @include md(775) {
+        display: none;
+    }
+  }
+
+    .header-input-top{
+    @include flex(center, center);
+    @include md(775) {
+        display: none;
+    }
+  }
+
+  .header-input-from {
+    margin-right: 24px;
+    @include flex(center, unset);
+    background-color: $input-bg-color;
+    border-radius: 4px;
+    
+    input {
+      border: none;
+      outline: none;
+      background-color: transparent;
+      padding: 12px 0 12px 12px;
+    }
+  }
+
+  .header-serach {
+    margin-right: 12px;
+    @include flex(center,center)
+  }
+
+ .header-line-shooping{
+    display: flex;
+    column-gap: 8px;
+  }
+
+  .cout-shopping{
+  border-radius: 100%;
+  width: 25px;
+  background-color: #DB4444;
+  color: #fff;
+  margin-top: -30px;
+}
+
+.cout-shopping-top{
+display: flex;
+align-items: center;
+}
+}

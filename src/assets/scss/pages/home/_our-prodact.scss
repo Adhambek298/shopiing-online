@@ -1,0 +1,15 @@
+.our-prodact-swiper {
+    flex-wrap: wrap;
+    row-gap: 60px;
+}
+.OurProdact {
+    margin-top: 70px;
+
+    &-revews {
+        font-family: $main-font;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.5;
+        color: $text-gray-color;
+    }
+}

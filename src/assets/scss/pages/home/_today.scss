@@ -1,0 +1,187 @@
+.today {
+  margin-top: 100px;
+
+ .main-top{
+    @include flex(center, unset);
+    column-gap: 12px;
+    margin-bottom: 24px;
+  }
+
+  .main-boder-top {
+    width: 18px;
+    height: 32px;
+    background-color: $red-color;
+    border-radius: 4px;
+  }
+
+.main-text-boder {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 125%;
+    color: $red-color;
+  }
+
+
+  &-paginition {
+    @include flex(center, unset);
+    column-gap: 8px;
+  }
+
+  &-button {
+    width: 46px;
+    height: 46px;
+    @include flex(center, center);
+    border-radius: 50%;
+    background-color: $input-bg-color;
+    @include trn();
+    &:hover {
+      background-color: $text-color;
+    }
+  }
+
+  &-swiper {
+    margin-top: 40px;
+    @include flex(center, space-between);
+
+    &__title {
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 150%;
+      color: $black-color;
+      margin: 16px 0 8px;
+    }
+  }
+
+  &-card {
+    position: relative;
+    width: 24%;
+    height: 100%;
+  }
+
+  &-image {
+    border-radius: 4px;
+    background-color: $input-bg-color;
+    padding: 40px;
+    position: relative;
+    width: 300px;
+    height: 260px;
+    overflow: hidden;
+    cursor: pointer;
+    @include trn();
+    img {
+      height: 100%;
+      width: 100%;
+    }
+
+    &:hover {
+      .today-text {
+        margin-top: -7px;
+      }
+    }
+  }
+
+  &-discount {
+    background-color: $red-color;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: $text-color;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    padding: 4px 12px;
+    border-radius: 4px;
+    text-align: center;
+  }
+
+  &-icons {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    row-gap: 8px;
+  }
+
+  &-btn {
+    background-color: $white-color;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    @include flex(center, center);
+    @include trn();
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
+  &-text {
+    background-color: $black-color;
+    color: $white-color;
+    text-align: center;
+    padding: 8px 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    margin-top: 35px;
+    @include trn();
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
+
+  &-price {
+    @include flex(center, unset);
+    column-gap: 12px;
+
+    &__new {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 150%;
+      color: $red-color;
+    }
+
+    &__old {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 150%;
+      text-decoration: line-through;
+      color: $text-gray-color;
+    }
+  }
+
+  &-star {
+    @include flex(center, unset);
+    column-gap: 4px;
+    margin-top: 8px;
+  }
+
+  &-bottom {
+    &-btn {
+      @include flex(center, center);
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
+
+    &-button {
+      background-color: $red-color;
+      padding: 16px 48px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 150%;
+      color: $text-color;
+      border-radius: 8px;
+      @include trn();
+
+      &:hover {
+        background-color: $gray-color;
+        color: $red-color;
+      }
+    }
+  }
+}
+.today-Categories{
+  background-color: $gray-color;
+}

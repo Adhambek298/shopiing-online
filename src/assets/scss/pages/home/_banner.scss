@@ -1,0 +1,166 @@
+.banner {
+  border-top: 1px solid $black-color;
+
+  .banner-top {
+    display: flex;
+
+    @include md(940) {
+      flex-direction: column;
+    }
+  }
+
+  .banner-row-icon {
+    border-right: 1px solid $black-color;
+  }
+
+  .banner-menu {
+    display: flex;
+
+    flex-direction: column;
+    padding: 40px 16px 0 0;
+
+    @include md(940) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      column-gap: 24px;
+    }
+  }
+
+  .header-links {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $black-color;
+    display: flex;
+    align-items: center;
+    @include trn();
+
+    @include md(980) {
+      font-size: 14px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+
+    &:hover {
+      color: coral
+    }
+  }
+
+ .banner-imges {
+    @include flex(center, unset);
+    margin: 0 auto;
+    background-color: $black-color;
+    margin-top: 40px;
+    padding: 30px 48px;
+    border-radius: 8px;
+    width: 800px;
+
+    @include md(980) {
+      width: 500px;
+    }
+
+    @include md(1440) {
+      padding: 30px 28px;
+    }
+    @include md(940) {
+      padding: 30px 68px;
+      width: 100%;
+    }
+
+    @include md(1090) {
+      width: 700px;
+    }
+    @include md(760) {
+      width: 700px;
+      padding: 20px 34px;
+    }
+    @include md(730) {
+      flex-direction: column;
+      row-gap: 12px;
+    }
+  }
+
+  .banner-icon-top {
+    width: 50%;
+
+    @include md(980) {
+      width: 40%;
+    }
+    @include md(730) {
+        width: 100%;
+      }
+  }
+
+  .banner-logo {
+    @include flex(center, unset);
+    column-gap: 12px;
+  }
+
+ .imges-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $text-color;
+
+    @include md(1090) {
+      font-size: 14px;
+    }
+  }
+
+ .banner-text-top {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 125%;
+    letter-spacing: 0.04em;
+    color: $text-color;
+    margin-top: 20px;
+
+    @include md(1090) {
+      font-size: 40px;
+    }
+    @include md(980) {
+      font-size: 30px;
+    }
+  }
+
+  .banner-button-icon {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $text-color;
+    margin-top: 20px;
+    @include flex(center, unset);
+    text-decoration: underline;
+    column-gap: 8px;
+
+    &:hover {
+      font-weight: 600;
+    }
+
+    svg {
+      path {
+        fill: white;
+      }
+    }
+  }
+
+  &-image {
+    width: 50%;
+
+    @include md(980) {
+      width: 60%;
+    }
+    @include md(730) {
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
